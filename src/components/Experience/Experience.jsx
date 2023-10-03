@@ -2,7 +2,9 @@ import React from "react";
 import html from "../../assets/html-5.png";
 import css from "../../assets/css-3.png";
 import js from "../../assets/js.png";
-import react from "../../assets/react.png"
+import react from "../../assets/react.png";
+import postgresql from "../../assets/postgre.png";
+import node from "../../assets/node.png"
 
 const Experience = () => {
 
@@ -33,9 +35,15 @@ const Experience = () => {
         },
         {
             id: 5,
-            src: html,
-            title: "Html",
+            src: postgresql,
+            title: "Postgre",
             style: "shadow-blue-600"
+        },
+        {
+            id: 6,
+            src: node,
+            title: "Node Js",
+            style: "shadow-green-400"
         }
     ];
 

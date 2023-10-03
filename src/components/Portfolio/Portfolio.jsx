@@ -1,37 +1,29 @@
 import React from "react";
 import YourDestiny from "../../assets/yourDestiny.jpeg";
+import pi from "../../assets/pi.png";
+
 
 const Portfolio = () => {
 
     const proyects = [
         {
             id: 1,
-            src: YourDestiny
+            src: YourDestiny,
+            demo: "",
+            code: ""
         },
         {
             id: 2,
-            src: YourDestiny
+            src: pi,
+            demo: "https://proyecto-individual-blush.vercel.app/",
+            code: "https://github.com/GabrielBustos0905/Proyecto-Individual"
         },
         {
             id: 3,
-            src: YourDestiny
+            src: YourDestiny,
+            demo: "",
+            code: ""
         },
-        // {
-        //     id: 4,
-        //     src: YourDestiny
-        // },
-        // {
-        //     id: 5,
-        //     src: YourDestiny
-        // },
-        // {
-        //     id: 6,
-        //     src: YourDestiny
-        // },
-        // {
-        //     id: 7,
-        //     src: YourDestiny
-        // },
     ];
 
     return (
@@ -44,12 +36,12 @@ const Portfolio = () => {
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
                     {
-                        proyects?.map(({id, src}) => (
+                        proyects?.map(({id, src, demo, code}) => (
                             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                                 <img src={src} alt="" className="rounded-md duration-200 hover:scale-105"/>
                                 <div className="flex items-center justify-center">
-                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"><a href={demo}>Demo</a></button>
+                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"><a href={code}>Code</a></button>
                                 </div>
                             </div>
                         ))
