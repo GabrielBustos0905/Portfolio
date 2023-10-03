@@ -18,12 +18,6 @@ const Portfolio = () => {
             demo: "https://proyecto-individual-blush.vercel.app/",
             code: "https://github.com/GabrielBustos0905/Proyecto-Individual"
         },
-        {
-            id: 3,
-            src: YourDestiny,
-            demo: "",
-            code: ""
-        },
     ];
 
     return (
