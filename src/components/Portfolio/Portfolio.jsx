@@ -9,8 +9,8 @@ const Portfolio = () => {
         {
             id: 1,
             src: YourDestiny,
-            demo: "",
-            code: ""
+            demo: "https://proyecto-final-one-beta.vercel.app/",
+            code: "https://github.com/GabrielBustos0905/Proyecto-Final"
         },
         {
             id: 2,
