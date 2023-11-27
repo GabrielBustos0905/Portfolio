@@ -1,6 +1,7 @@
 import React from "react";
 import YourDestiny from "../../assets/yourDestiny.jpeg";
 import pi from "../../assets/pi.png";
+import ct from "../../assets/ct.png"
 
 
 const Portfolio = () => {
@@ -18,6 +19,12 @@ const Portfolio = () => {
             demo: "https://proyecto-individual-blush.vercel.app/",
             code: "https://github.com/GabrielBustos0905/Proyecto-Individual"
         },
+        {
+            id: 3,
+            src: ct,
+            demo: "https://clima-tacto.vercel.app/",
+            code: "https://github.com/GabrielBustos0905/clima-tacto"
+        }
     ];
 
     return (
